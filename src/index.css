@@ -521,7 +521,24 @@ footer {
 TODO: background color transition #F2F8FF
   Give enough spacing for section transition
 */
+/* Onboarding Pages */
+.loginContainer {
+  padding: 20px 40px 0 40px;
+}
+.onboardingHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.onboardingOthers span{
+  padding-right: 8px;
 
+}
+.onboardingOthers a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+}
 @media only screen and (max-width: 1200px) {
   .formControlContainer .formControl {
     width: unset;
