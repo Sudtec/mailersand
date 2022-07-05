@@ -3,9 +3,13 @@ import { Link } from "react-router-dom";
 import { ReactComponent as Menubar } from '../images/menubar.svg'
 import { ReactComponent as Logo } from '../images/RealEstatelogo.svg';
 import { ReactComponent as Search } from '../images/search.svg';
-import Scrollspy from 'react-scrollspy'
+import Scrollspy from 'react-scrollspy';
+
 
 const HomeNavbar = () => {
+    const logIn = () => {
+
+    }
     return (
         <div className="homeNavarContainer container-fluid">
             <div className='container'>
@@ -44,7 +48,7 @@ const HomeNavbar = () => {
                                     <Search className='searchIcon' />
                                     <input className="formControl me-2" type="search" placeholder="Search....." aria-label="Search" />
                                 </div>
-                                <button className="navBtn" type="submit">Log in</button>
+                                <Link className="navBtn" to="/login" type="submit"onClick={logIn}>Log in</Link>
                             </div>
                         </div>
 
