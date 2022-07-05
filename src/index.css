@@ -581,6 +581,10 @@ TODO: background color transition #F2F8FF
   .navbar-collapse.collapse {
     padding-left: 9px;
   }
+  .introInfo button,
+  .propertiesButton {
+    font-size: 16px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .introInfo {
@@ -660,5 +664,11 @@ TODO: background color transition #F2F8FF
   }
   .footerLinkContainer li a {
     font-size: 10px;
+  }
+  .foooterDesc {
+    text-align: center;
+  }
+  .socials {
+    margin-left: 69px;
   }
 }
