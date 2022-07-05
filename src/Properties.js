@@ -29,15 +29,20 @@ const Properties = () => {
         },
     ]
     return (
-        <section className='container properties'>
+        <section className='container properties' id='properties'>
+            <div className='socialContainer'>
+                <div className='socialBg'>
+
+                </div>
+            </div>
             <div className='propertiesHeader'>
                 <h5>Our Featured Properties.</h5>
                 <p>One of our biggest product to be featured and that has sold out the most</p>
             </div>
             <div className='row'>
                 {
-                    datas.map(data => (
-                        <div className='col-md-4'>
+                    datas.map((data, index) => (
+                        <div className='col-md-4' key={index}>
                             <div className='propertiesCard'>
                                 <div className='propertiesCardImgContainer'>
                                     <img src={data.image} alt="card" className='img-fluid propertieImg' />

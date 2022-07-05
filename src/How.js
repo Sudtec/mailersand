@@ -22,18 +22,18 @@ const How = () => {
         }
     ]
     return (
-        <section className='container how'>
+        <section className='container how' id="how">
             <div className='howHeader'>
                 <h5>How it works</h5>
                 <p>Set up and customize your home in just a few clicks and we will shoulder the remaining burder for you.</p>
             </div>
             <div className='row'>
                 {
-                    cards.map(card => (
-                        <div className='col-md-4'>
+                    cards.map((card, index) => (
+                        <div className='col-md-4' key={index}>
                             <div className='howCard'>
-                                <img src={card.image} alt="card" />
-                                <h5>{cards.title}</h5>
+                                <img src={card.image} alt="card" className='img-fluid howImg' />
+                                <h5>{card.title}</h5>
                                 <p>{card.description}</p>
                             </div>
                         </div>
