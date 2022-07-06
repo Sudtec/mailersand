@@ -530,14 +530,136 @@ TODO: background color transition #F2F8FF
   justify-content: space-between;
   align-items: center;
 }
-.onboardingOthers span{
+.onboardingOthers span {
   padding-right: 8px;
-
 }
 .onboardingOthers a {
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
+}
+.formContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+.formHeader h2 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: 0.321429px;
+}
+.formHeader p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+.GoogleBtn {
+  background: #4e49e1;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  padding: 10px 0px;
+  margin: 30px auto;
+  display: block;
+  align-self: center;
+  width: 90%;
+}
+.GoogleBtn:hover {
+  background: #4c47e9;
+}
+.GoogleBtn svg {
+  margin-right: 20px;
+}
+.ant-divider-horizontal.ant-divider-with-text {
+  color: #2563eb !important;
+}
+.ant-divider-horizontal.ant-divider-with-text:after,
+.ant-divider-horizontal.ant-divider-with-text:before {
+  border-top: 1px solid #2a2b36;
+}
+form {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+}
+.formGroup {
+  width: 90%;
+  margin-top: 30px;
+}
+
+.formGroup input {
+  font-size: 16px;
+  font-family: inherit;
+  color: inherit;
+  padding: 8px 16px;
+  border-radius: 2px;
+  background-color: #e3e7f0;
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 100%;
+  display: block;
+  transition: all 0.3s;
+  outline: none;
+}
+.formGroup input::placeholder {
+  font-size: 14px;
+}
+.formGroup label {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: black;
+  margin-bottom: 10px;
+
+  /* transform: translateY(-70px);
+  transition: all 0.3s; */
+}
+
+/* .formGroup input:placeholder-shown + .formLabel,
+.formGroup .formInput input:placeholder-shown + .formLabel{
+  transform: translateY(-30px);
+  visibility: hidden;
+  display: none;
+} */
+.ant-input-affix-wrapper {
+  background-color: #e3e7f0;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+}
+/* .formGroup .formInput input:placeholder-shown{
+  border-bottom: 2px solid red;
+} */
+.formBtn {
+  background: #9fa0a4;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #6e768c;
+  margin-top: 30px;
+  width: 90%;
+  height: 44px;
+}
+.formBtn:hover {
+  background: #a6a7aa;
+  outline: none;
+  color: #6e768c;
+  border: none;
+}
+.dividerContainer {
+  width: 90%;
+  margin: 0 auto;
 }
 @media only screen and (max-width: 1200px) {
   .formControlContainer .formControl {
