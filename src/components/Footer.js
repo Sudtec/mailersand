@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ReactComponent as Logo } from './images/RealEstatelogo.svg';
-import { ReactComponent as Facebook } from './images/facebook.svg';
-import { ReactComponent as Twitter } from './images/twitter.svg';
-import { ReactComponent as Instagram } from './images/instagram.svg';
-import { ReactComponent as Linkedin } from './images/linkedin.svg';
+import { ReactComponent as Logo } from '../images/RealEstatelogo.svg';
+import { ReactComponent as Facebook } from '../images/facebook.svg';
+import { ReactComponent as Twitter } from '../images/twitter.svg';
+import { ReactComponent as Instagram } from '../images/instagram.svg';
+import { ReactComponent as Linkedin } from '../images/linkedin.svg';
 
 
 const Footer = () => {

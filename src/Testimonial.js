@@ -146,7 +146,7 @@ const Testimonial = () => {
                     items={window.innerWidth / 400} loop nav autoplay={true}>
                     {
                         datas.map((data, index) => (
-                            <div class='item testimonialCard' key={index}>
+                            <div className='item testimonialCard' key={index}>
                                 <div className='profile'>
                                     <div className='profileImg'>
                                         <img src={data.image} alt='profile' className='img-fluid' />

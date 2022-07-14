@@ -184,8 +184,8 @@ body {
   margin-top: 75px;
 }
 .howCard {
-  background: #ffffff;
-  box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, 0.12);
+  background: #f7f2f2;
+
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -284,8 +284,9 @@ body {
 }
 .propertiesCard {
   background: #ffffff;
-  box-shadow: 7px 7px 11px 9px rgb(0 0 0 / 12%);
+  box-shadow: 7px 7px 11px 9px rgb(0 0 0 / 8%);
   border-radius: 15px;
+  margin-bottom: 50px;
 }
 .propertiesCard .propertiesCardImgContainer {
   padding: 50px 15px 20px 15px;
@@ -522,7 +523,9 @@ TODO: background color transition #F2F8FF
   Give enough spacing for section transition
 */
 /* Onboarding Pages */
-.loginContainer {
+.loginContainer,
+.signupContainer,
+.resetContainer {
   padding: 20px 40px 0 40px;
 }
 .onboardingHeader {
@@ -555,6 +558,10 @@ TODO: background color transition #F2F8FF
   font-size: 16px;
   line-height: 19px;
   text-align: center;
+}
+.formRem {
+  text-align: center;
+  margin-top: 20px;
 }
 .GoogleBtn {
   background: #4e49e1;
@@ -594,8 +601,15 @@ form {
   width: 90%;
   margin-top: 30px;
 }
+.formSGroup {
+  width: 96%;
+}
+.formRGroup {
+  margin-top: 30px;
+}
 
-.formGroup input {
+.formGroup input,
+.formRGroup input {
   font-size: 16px;
   font-family: inherit;
   color: inherit;
@@ -609,10 +623,12 @@ form {
   transition: all 0.3s;
   outline: none;
 }
-.formGroup input::placeholder {
+.formGroup input::placeholder,
+.formRGroup input::placeholder {
   font-size: 14px;
 }
-.formGroup label {
+.formGroup label,
+.formRGroup label {
   display: block;
   font-weight: 400;
   font-size: 14px;
@@ -639,7 +655,47 @@ form {
 /* .formGroup .formInput input:placeholder-shown{
   border-bottom: 2px solid red;
 } */
+.ant-btn[disabled],
+.ant-btn[disabled]:active,
+.ant-btn[disabled]:focus,
+.ant-btn[disabled]:hover {
+  margin-top: 20px !important;
+}
 .formBtn {
+  background: #9fa0a4;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #6e768c;
+  margin-top: 20px !important;
+  width: 90%;
+  height: 44px;
+  border: none;
+}
+.formBtn .signUpBtn {
+  margin-top: 20px !important;
+}
+.formBtn.active {
+  background: #4e49e1;
+  color: white;
+  font-weight: 700;
+}
+/* .formBtn:hover {
+  background: #a6a7aa;
+  outline: none;
+  color: #6e768c;
+  border: none;
+} */
+.dividerContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+.ant-btn[disabled],
+.ant-btn[disabled]:active,
+.ant-btn[disabled]:focus,
+.ant-btn[disabled]:hover {
   background: #9fa0a4;
   border-radius: 4px;
   font-weight: 500;
@@ -651,15 +707,53 @@ form {
   width: 90%;
   height: 44px;
 }
-.formBtn:hover {
-  background: #a6a7aa;
-  outline: none;
-  color: #6e768c;
-  border: none;
+.formGroup .border-danger {
+  border-bottom: 3px solid red;
 }
-.dividerContainer {
+.formError {
+  margin-top: 8px;
+}
+.formError svg {
+  margin-right: 5px;
+}
+.policy {
   width: 90%;
-  margin: 0 auto;
+  margin: 10px auto;
+}
+.propertiesType {
+  margin-top: 80px;
+}
+.propertyTypeName {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.03em;
+}
+.propertiesType .propertiesTypeCardContainer > div {
+  margin-top: 50px;
+}
+.fInfo,
+.fInfo:hover {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.205714px;
+  display: block;
+  margin-top: 30px;
+  color: black;
+}
+
+/* Property page  */
+.propertyPageSection {
+  padding: 50px auto;
+}
+.mainContainer {
+  text-align: center;
+}
+.mainContainer img {
+  width: 1048px;
+  height: 644px;
 }
 @media only screen and (max-width: 1200px) {
   .formControlContainer .formControl {

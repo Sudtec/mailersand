@@ -9,7 +9,7 @@ import Properties from './Properties';
 import Support from './Support';
 import Testimonial from './Testimonial';
 import Faq from './Faq';
-import Footer from './Footer';
+import Footer from './components/Footer';
 
 const Home = () => {
     return (
